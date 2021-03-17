@@ -1,0 +1,29 @@
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+.intro {
+  background-color: #3B3E4E;
+  height: 100vh;
+  div {
+    text-align: center;
+    h1 {
+      color: white;
+      font-size: 72px;
+    }
+    p {
+      color: white;
+      font-size: 16px;
+    }
+  }
+
+  button {
+    background-color: #F8D271;
+    color: #2B2C3A;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: "Noto Sans";
+    border: 0px;
+    border-radius: 54px;
+    width: 156px;
+    height: 46px;
+  }
+}
