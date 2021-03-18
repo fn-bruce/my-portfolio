@@ -1,5 +1,9 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
+body {
+  background-color: #2B2C3A;
+}
+
 .intro {
   background-color: #3B3E4E;
   height: 100vh;
@@ -44,5 +48,17 @@
   .shape2 {
     left: 35% !important;
     top: 10% !important;
+  }
+}
+
+.about-me {
+  height: 35vh;
+  max-width: 800px;
+  div {
+    width: 75%;
+    color: white;
+    h1 {
+      margin-bottom: 10px;
+    }
   }
 }
