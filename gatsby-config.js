@@ -17,5 +17,11 @@ module.exports = {
         path: `${__dirname}/src/images`,
       },
     },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        icon: `src/images/avatar1.png`
+      }
+    },
   ],
 }
