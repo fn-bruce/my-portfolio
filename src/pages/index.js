@@ -1,8 +1,17 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { graphql } from "gatsby";
 import Img from "gatsby-image";
+import Parallax from "parallax-js";
 
 export default function Home({ data }) {
+
+  useEffect(() => {
+    var parallax = document.getElementsByClassName('parallax')[0];
+    new Parallax(parallax, {
+      relativeInput: true
+    });
+  });
+
   return (
     <section>
       <div className="intro d-flex justify-content-center align-items-center">
@@ -17,9 +26,10 @@ export default function Home({ data }) {
           <button>Contact Me</button>
         </div>
       </div>
-      <div className="parallax">
+      <div className="parallax" data-relative-input="true">
         <svg
-          className="layer s1"
+          className="layer shape1"
+          data-depth="0.2"
           width="55"
           height="47"
           xmlns="http://www.w3.org/2000/svg"
