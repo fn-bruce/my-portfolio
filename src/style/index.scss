@@ -51,8 +51,13 @@ body {
   }
 }
 
+.tech-icon {
+  width: 50px !important;
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+
 .about-me {
-  height: 35vh;
   max-width: 800px;
   div {
     width: 75%;
@@ -62,3 +67,18 @@ body {
     }
   }
 }
+
+.technologies {
+  max-width: 800px;
+  div {
+    width: 75%;
+    color: white;
+    margin-left: 0;
+  }
+}
+
+// @media(max-width: 600px) {
+//   .avatar {
+//     display: none !important;
+//   }
+// }
