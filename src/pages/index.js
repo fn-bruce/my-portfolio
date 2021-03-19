@@ -3,6 +3,9 @@ import { StaticImage } from "gatsby-plugin-image";
 import IntroParallax from "../components/IntroParallax";
 
 export default function Home() {
+
+  const iconHeight = 60;
+
   return (
     <main>
       <section>
@@ -22,7 +25,7 @@ export default function Home() {
         </div>
         <IntroParallax />
       </section>
-      <section className="about-me d-flex justify-content-center w-75 mx-auto my-5">
+      <section className="about-me d-flex justify-content-center w-75 mx-auto my-4">
         <StaticImage
           className="m-auto"
           src="../images/avatar1.png"
@@ -35,14 +38,82 @@ export default function Home() {
           <p>I am Bruce Nguyen, software developer from Utah, United States. I have professional experience in data engineering using Python, Redis, Docker, AWS to ingest data and transform into readable format. On the side, I like to create web applications using React and Django. I'm also self motivated to learn about new technologies to help create efficient solutions that could be applied programmatically.</p>
         </div>
       </section>
-      {/* <section className="technologies d-flex justify-content-center w-75 m-auto"> */}
-      {/*   <div className="container"> */}
-      {/*     <h2>Technologies</h2> */}
-      {/*     <h3>Programming Languages</h3> */}
-      {/*     <h3>Web Frameworks</h3> */}
-      {/*     <h3>Tools/Services</h3> */}
-      {/*   </div> */}
-      {/* </section> */}
+      <section className="technologies d-flex justify-content-center w-50 mx-auto my-4">
+        <div className="container w-100">
+          <div className="programming-icons d-flex justify-content-between w-100">
+            <StaticImage className="my-3"
+              src="../images/python.png"
+              alt="python"
+              layout="fixed"
+              height={iconHeight}
+            />
+            <StaticImage className="my-3"
+              src="../images/html-css-js.png"
+              alt="html-css-js"
+              layout="fixed"
+              height={iconHeight}
+            />
+            <StaticImage className="my-3"
+              src="../images/mysql.png"
+              alt="mysql"
+              layout="fixed"
+              height={iconHeight}
+            />
+            <StaticImage className="my-3"
+              src="../images/scrapy.png"
+              alt="scrapy"
+              layout="fixed"
+              height={iconHeight}
+            />
+          </div>
+          <div className="programming-icons d-flex justify-content-around w-100">
+            <StaticImage className="my-3"
+              src="../images/spark.png"
+              alt="spark"
+              layout="fixed"
+              height={iconHeight}
+            />
+            <StaticImage className="my-3"
+              src="../images/react.png"
+              alt="react"
+              layout="fixed"
+              height={iconHeight}
+            />
+            <StaticImage className="my-3"
+              src="../images/django.png"
+              alt="django"
+              layout="fixed"
+              height={iconHeight}
+            />
+          </div>
+          <div className="programming-icons d-flex justify-content-between w-100">
+            <StaticImage className="my-3"
+              src="../images/nodejs.png"
+              alt="nodejs"
+              layout="fixed"
+              height={iconHeight}
+            />
+            <StaticImage className="my-3"
+              src="../images/aws.png"
+              alt="aws"
+              layout="fixed"
+              height={iconHeight}
+            />
+            <StaticImage className="my-3"
+              src="../images/redis.png"
+              alt="redis"
+              layout="fixed"
+              height={iconHeight}
+            />
+            <StaticImage className="my-3"
+              src="../images/docker.png"
+              alt="docker"
+              layout="fixed"
+              height={iconHeight}
+            />
+          </div>
+        </div>
+      </section>
     </main>
   )
 }
