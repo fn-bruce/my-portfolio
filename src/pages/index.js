@@ -48,8 +48,8 @@ export default function Home() {
               height={iconHeight}
             />
             <StaticImage className="my-3"
-              src="../images/html-css-js.png"
-              alt="html-css-js"
+              src="../images/aws.png"
+              alt="aws"
               layout="fixed"
               height={iconHeight}
             />
@@ -74,6 +74,20 @@ export default function Home() {
               height={iconHeight}
             />
             <StaticImage className="my-3"
+              src="../images/redis.png"
+              alt="redis"
+              layout="fixed"
+              height={iconHeight}
+            />
+            <StaticImage className="my-3"
+              src="../images/docker.png"
+              alt="docker"
+              layout="fixed"
+              height={iconHeight}
+            />
+          </div>
+          <div className="programming-icons d-flex justify-content-between w-100">
+            <StaticImage className="my-3"
               src="../images/react.png"
               alt="react"
               layout="fixed"
@@ -85,8 +99,6 @@ export default function Home() {
               layout="fixed"
               height={iconHeight}
             />
-          </div>
-          <div className="programming-icons d-flex justify-content-between w-100">
             <StaticImage className="my-3"
               src="../images/nodejs.png"
               alt="nodejs"
@@ -94,20 +106,8 @@ export default function Home() {
               height={iconHeight}
             />
             <StaticImage className="my-3"
-              src="../images/aws.png"
-              alt="aws"
-              layout="fixed"
-              height={iconHeight}
-            />
-            <StaticImage className="my-3"
-              src="../images/redis.png"
-              alt="redis"
-              layout="fixed"
-              height={iconHeight}
-            />
-            <StaticImage className="my-3"
-              src="../images/docker.png"
-              alt="docker"
+              src="../images/html-css-js.png"
+              alt="html-css-js"
               layout="fixed"
               height={iconHeight}
             />
