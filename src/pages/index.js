@@ -1,10 +1,16 @@
-import React from "react"
+import React, { useEffect } from "react"
 import { StaticImage } from "gatsby-plugin-image";
 import IntroParallax from "../components/IntroParallax";
 import Popup from 'reactjs-popup';
+import WOW from 'wowjs';
 
 export default function Home() {
   const iconHeight = 60;
+
+  useEffect(() => {
+    const wow = new WOW.WOW();
+    wow.init();
+  });
 
   const project = (
     <Popup
@@ -64,20 +70,20 @@ export default function Home() {
       </section>
       <section className="about-me d-flex justify-content-center w-75 mx-auto my-4">
         <StaticImage
-          className="my-auto"
+          className="my-auto wow fadeInUp"
           src="../images/avatar1.png"
           alt="My Avatar"
           layout="fixed"
           width={115}
         />
         <div className="ml-auto">
-          <h1>My Story</h1>
-          <p>I am Bruce Nguyen, software developer from Utah, United States. I have professional experience in data engineering using Python, Redis, Docker, AWS to ingest data and transform into readable format. On the side, I like to create web applications using React and Django. I'm also self motivated to learn about new technologies to help create efficient solutions that could be applied programmatically.</p>
+          <h1 className="wow fadeInUp">My Story</h1>
+          <p className="wow fadeInUp">I am Bruce Nguyen, software developer from Utah, United States. I have professional experience in data engineering using Python, Redis, Docker, AWS to ingest data and transform into readable format. On the side, I like to create web applications using React and Django. I'm also self motivated to learn about new technologies to help create efficient solutions that could be applied programmatically.</p>
         </div>
       </section>
       <section className="technologies d-flex justify-content-center w-75 mx-auto my-4">
         <div className="container w-100">
-          <div className="programming-icons d-flex justify-content-between w-100">
+          <div className="programming-icons d-flex justify-content-between w-100 wow fadeInUp">
             <StaticImage className="my-3"
               src="../images/python.png"
               alt="python"
@@ -103,7 +109,7 @@ export default function Home() {
               height={iconHeight}
             />
           </div>
-          <div className="programming-icons d-flex justify-content-around w-100">
+          <div className="programming-icons d-flex justify-content-around w-100 wow fadeInUp">
             <StaticImage className="my-3"
               src="../images/spark.png"
               alt="spark"
@@ -123,7 +129,7 @@ export default function Home() {
               height={iconHeight}
             />
           </div>
-          <div className="programming-icons d-flex justify-content-between w-100">
+          <div className="programming-icons d-flex justify-content-between w-100 wow fadeInUp">
             <StaticImage className="my-3"
               src="../images/react.png"
               alt="react"
@@ -153,8 +159,8 @@ export default function Home() {
       </section>
       <section className="projects d-flex justify-content-center w-75 mx-auto mb-5">
         <div className="container">
-          <div className="header">Projects</div>
-          <div className="projects-container d-flex flex-wrap justify-content-between h-100">
+          <div className="header wow fadeInUp">Projects</div>
+          <div className="projects-container d-flex flex-wrap justify-content-between h-100 wow fadeInUp">
             {project}
             {project}
             {project}
@@ -162,7 +168,7 @@ export default function Home() {
         </div>
       </section>
       <section className="end d-flex justify-content-center align-items-center w-100">
-        <div className="container">
+        <div className="container wow fadeInUp">
           <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4108 12.5L18.3549 11.9727C14.757 10.1895 12.4863 6.51547 12.5004 2.5C12.5004 1.11929 13.6196 0 15.0004 0C16.3811 0 17.5004 1.11929 17.5004 2.5C17.4929 4.61936 18.6911 6.55858 20.59 7.5L21.6459 8.02735C25.2437 9.81055 27.5144 13.4845 27.5003 17.5C27.5003 18.8807 26.3811 20 25.0004 20C23.6196 20 22.5004 18.8807 22.5004 17.5C22.5078 15.3806 21.3096 13.4414 19.4108 12.5ZM34.4108 12.5L33.3549 11.9727C29.757 10.1895 27.4863 6.51547 27.5004 2.5C27.5004 1.11929 28.6196 0 30.0004 0C31.3811 0 32.5004 1.11929 32.5004 2.5C32.4929 4.61936 33.6911 6.55858 35.59 7.5L36.6459 8.02735C40.2437 9.81055 42.5144 13.4845 42.5004 17.5C42.5004 18.8807 41.3811 20 40.0004 20C38.6196 20 37.5004 18.8807 37.5004 17.5C37.5078 15.3806 36.3096 13.4414 34.4108 12.5ZM57.5 24.9997H2.5C1.11929 24.9997 0 26.119 0 27.4997C0 28.8804 1.11929 29.9997 2.5 29.9997H57.5C58.8807 29.9997 60 28.8804 60 27.4997C60 26.119 58.8807 24.9997 57.5 24.9997ZM14.9997 60.0003V53.0319C8.70405 48.9152 4.37056 42.3983 3.00939 35.0003H56.99C55.6289 42.3983 51.2954 48.9152 44.9997 53.0319V60.0003H14.9997Z" fill="white" />
           </svg>

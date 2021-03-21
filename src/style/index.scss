@@ -182,7 +182,8 @@ button {
   text-align: center;
   color: white;
   .container {
-    width: 225px
+    width: 225px;
+    animation-duration: 2s; /* don't forget to set a duration! */
   }
   p {
     margin-top: 20px;
