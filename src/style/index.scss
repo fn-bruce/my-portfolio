@@ -21,6 +21,9 @@ body {
   }
   a {
     color: white !important;
+    &:hover {
+      color: #F5BA4F !important;
+    }
   }
 }
 

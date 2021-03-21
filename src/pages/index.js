@@ -6,11 +6,15 @@ import WOW from 'wowjs';
 import { ScrollTo } from "react-scroll-to";
 
 export default function Home() {
+  const [isWow, setIsWow] = useState(false);
   const iconHeight = 60;
 
   useEffect(() => {
-    const wow = new WOW.WOW();
-    wow.init();
+    if (!isWow) {
+      const wow = new WOW.WOW();
+      wow.init();
+      setIsWow(true);
+    }
   });
 
   const project = (
@@ -59,9 +63,10 @@ export default function Home() {
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="nav-item nav-link active" href="#intro">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#intro">Home <span class="sr-only">(current)</span></a>
             <a class="nav-item nav-link" href="#about-me">About Me</a>
             <a class="nav-item nav-link" href="#technologies">Technologies</a>
+            <a class="nav-item nav-link" href="#projects">Projects</a>
             <a class="nav-item nav-link" href="#contact-me">Contact Me</a>
           </div>
         </div>
