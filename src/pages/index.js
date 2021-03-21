@@ -3,6 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import IntroParallax from "../components/IntroParallax";
 import Popup from 'reactjs-popup';
 import WOW from 'wowjs';
+import { ScrollTo } from "react-scroll-to";
 
 export default function Home() {
   const iconHeight = 60;
@@ -84,7 +85,13 @@ export default function Home() {
               </a>
 
             </div>
-            <button>Contact Me</button>
+            <ScrollTo>
+              {({ scroll }) => {
+                return <a href="#contact-me">
+                  <button>Contact Me</button>
+                </a>
+              }}
+            </ScrollTo>
           </div>
         </div>
         <IntroParallax />
@@ -188,7 +195,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="contact-me d-flex justify-content-around align-items-center w-75 mx-auto">
+      <section id="contact-me" className="contact-me d-flex justify-content-around align-items-center w-75 mx-auto">
         <div className="container d-flex justify-content-around">
           <div className="my-auto">
             <h1 className="wow fadeInUp">Lets talk</h1>
