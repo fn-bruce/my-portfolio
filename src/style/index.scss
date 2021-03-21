@@ -1,7 +1,9 @@
 @import "../../node_modules/bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
 
 body {
   background-color: #2B2C3A;
+  font-family: Noto Sans;
 }
 
 .intro {
@@ -19,17 +21,18 @@ body {
     }
   }
 
-  button {
-    background-color: #F8D271;
-    color: #2B2C3A;
-    text-decoration: none;
-    font-size: 16px;
-    font-family: "Noto Sans";
-    border: 0px;
-    border-radius: 54px;
-    width: 156px;
-    height: 46px;
-  }
+}
+
+button {
+  background-color: #F8D271;
+  color: #2B2C3A;
+  text-decoration: none;
+  font-size: 16px;
+  font-family: "Noto Sans";
+  border: 0px;
+  border-radius: 54px;
+  width: 156px;
+  height: 46px;
 }
 
 .parallax {
@@ -76,6 +79,101 @@ body {
     width: 75%;
     color: white;
     margin-left: 0;
+  }
+}
+
+.projects {
+  color: white;
+  .container {
+    .header {
+      font-weight: 400;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    .projects-container {
+      .project-container {
+        background-color: #F5BA4F;
+        height: 30vh;
+        width: 20vw;
+        min-width: 225px;
+        border-radius: 5px;
+        text-align: center;
+        .project-img {
+          border-radius: 5px;
+            opacity: 1.0;
+            transition: opacity .44s ease-in-out;
+            -moz-transition: opacity .44s ease-in-out;
+            -webkit-transition: opacity .44s ease-in-out;
+          &:hover {
+            cursor: pointer;
+            opacity: 0.3;
+            transition: opacity .44s ease-in-out;
+            -moz-transition: opacity .44s ease-in-out;
+            -webkit-transition: opacity .44s ease-in-out;
+          }
+        }
+      }
+    }
+  }
+}
+
+@keyframes anvil {
+  0% {
+    transform: scale(1) translateY(0px);
+    opacity: 0;
+    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+  }
+  1% {
+    transform: scale(0.96) translateY(10px);
+    opacity: 0;
+    box-shadow: 0 0 0 rgba(241, 241, 241, 0);
+  }
+  100% {
+    transform: scale(1) translateY(0px);
+    opacity: 1;
+    box-shadow: 0 0 500px rgba(241, 241, 241, 0);
+  }
+}
+
+.popup-content {
+  padding: 0 !important;
+  background-color: #2D2F3D !important;
+  border: 0px !important;
+  border-radius: 10px;
+  -webkit-animation: anvil 0.5s cubic-bezier(0.38, 0.1, 0.36, 0.9) forwards;
+}
+
+.popup-overlay {
+}
+
+.project-modal {
+  font-size: 12px;
+  color: white;
+  border-radius: 10px;
+  .header {
+    width: 100%;
+    border-bottom: 1px solid gray;
+    font-size: 18px;
+    text-align: center;
+    padding: 5px;
+  }
+  .content {
+    width: 100%;
+    padding: 10px 15px;
+    text-align: center;
+    p {
+      text-align: left;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    a {
+      button {
+        font-size: 14px;
+        height: 30px;
+        width: 120px;
+        margin-bottom: 10px;
+      }
+    }
   }
 }
 
