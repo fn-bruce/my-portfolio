@@ -116,15 +116,15 @@ export default function Home() {
           </div>
           <IntroParallax />
         </section>
-        <section id="about-me" className="about-me d-flex justify-content-center w-75 mx-auto my-4">
+        <section id="about-me" className="about-me d-flex justify-content-center w-75 mx-auto my-4 flex-wrap">
           <StaticImage
-            className="my-auto wow fadeInUp"
+            className="avatar my-auto wow fadeInUp"
             src="../images/avatar1.png"
             alt="My Avatar"
             layout="fixed"
             width={115}
           />
-          <div className="ml-auto">
+          <div className="description ml-auto">
             <h1 className="wow fadeInUp">My Story</h1>
             <p className="wow fadeInUp">I am Bruce Nguyen, software developer from Utah, United States. I have professional experience in data engineering using Python, Redis, Docker, AWS to ingest data and transform into readable format. On the side, I like to create web applications using React and Django. I'm also self motivated to learn about new technologies to help create efficient solutions that could be applied programmatically.</p>
           </div>
@@ -216,7 +216,7 @@ export default function Home() {
           </div>
         </section>
         <section id="contact-me" className="contact-me d-flex justify-content-around align-items-center w-75 mx-auto">
-          <div className="container d-flex justify-content-around">
+          <div className="container d-flex justify-content-around flex-wrap">
             <div className="my-auto">
               <h1 className="wow fadeInUp">Lets talk</h1>
               <a className="wow fadeInUp" href="mailto:bruceleenguyen95@gmail.com">
@@ -230,7 +230,7 @@ export default function Home() {
             <form className="my-auto wow fadeInUp" action="https://getform.io/f/587ae21e-cb3b-4e46-a1d8-2c62dd2edd5f" method="POST">
               <h2>Get In Touch</h2>
               <label>What's your full name?</label>
-              <input className="noselect" type="text" name="fullName" required />
+              <input type="text" name="fullName" required />
 
               <label>Your fancy email</label>
               <input type="email" name="email" required />

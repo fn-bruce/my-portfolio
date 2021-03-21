@@ -322,8 +322,53 @@ button {
   }
 }
 
-// @media(max-width: 600px) {
-//   .avatar {
-//     display: none !important;
-//   }
-// }
+@media(max-width: 650px) {
+  .intro {
+    background-color: #3B3E4E;
+    div {
+      h1 {
+        font-size: 64px;
+      }
+    }
+  }
+  .parallax {
+    display: none;
+  }
+  .about-me {
+    padding-top: 25px;
+    .description {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      margin-top: 25px !important;
+      width: 400px;
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+  .projects {
+    .container {
+      .project-container {
+        width: 100% !important;
+      }
+    }
+  }
+
+  .contact-me {
+    height: 80vh;
+    .container {
+      div {
+        width: 100%;
+        margin-left: 0 !important;
+      }
+      form {
+        margin-top: 30px !important;
+        width: 100vh !important;
+        input {
+          width: 100% !important;
+        }
+      }
+
+    }
+  }
+}
