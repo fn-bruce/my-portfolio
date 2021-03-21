@@ -11,7 +11,8 @@ body {
 }
 
 .navbar {
-  position: sticky;
+  position: fixed;
+  width: 100%;
   top: 0;
   z-index: 3;
   background-color: #2B2C3A !important;
@@ -151,7 +152,7 @@ button {
 }
 
 .about-me {
-  max-width: 800px;
+  max-width: 900px;;
   div {
     width: 75%;
     color: white;
@@ -159,19 +160,30 @@ button {
       margin-bottom: 10px;
     }
   }
+  .description {
+    b {
+      color: #F5C95E !important;
+    }
+  }
 }
 
 .technologies {
-  max-width: 800px;
+  max-width: 900px;;
   div {
     width: 75%;
     color: white;
     margin-left: 0;
   }
+  .header {
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
 }
 
 .projects {
   color: white;
+  max-width: 900px;;
   .container {
     .header {
       font-weight: 400;
@@ -182,7 +194,9 @@ button {
       .project-container {
         background-color: #F5BA4F;
         height: 200px;
-        width: 300px;
+        width: 31%;
+        margin-left: 1%;
+        margin-right: 1%;
         border-radius: 5px;
         text-align: center;
         .project-img {
@@ -267,6 +281,7 @@ button {
 .contact-me {
   color: white;
   height: 50vh;
+  max-width: 900px;;
   div {
     h1 {
       width: 250px;
@@ -325,7 +340,7 @@ button {
   }
 }
 
-@media(max-width: 650px) {
+@media(max-width: 700px) {
   .navbar-toggler {
     width: 50px;
   }
@@ -351,9 +366,6 @@ button {
       h1 {
         text-align: center;
       }
-      b {
-        color: #F5C95E;
-      }
     }
   }
   .projects {
@@ -365,7 +377,7 @@ button {
   }
 
   .contact-me {
-    height: 80vh;
+    height: 60vh;
     .container {
       div {
         width: 100%;

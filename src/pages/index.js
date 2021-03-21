@@ -116,9 +116,9 @@ export default function Home() {
           </div>
           <IntroParallax />
         </section>
-        <section id="about-me" className="about-me d-flex justify-content-center w-75 mx-auto my-4 flex-wrap">
+        <section id="about-me" className="about-me d-flex justify-content-between w-75 mx-auto my-4 flex-wrap">
           <StaticImage
-            className="avatar my-auto wow fadeInUp"
+            className="avatar mx-auto my-auto wow fadeInUp"
             src="../images/avatar1.png"
             alt="My Avatar"
             layout="fixed"
@@ -131,6 +131,7 @@ export default function Home() {
         </section>
         <section id="technologies" className="technologies d-flex justify-content-center w-75 mx-auto my-4">
           <div className="container w-100">
+            <div className="header wow fadeInUp">Technologies</div>
             <div className="programming-icons d-flex justify-content-between w-100 wow fadeInUp">
               <StaticImage className="my-3"
                 src="../images/python.png"
@@ -206,7 +207,7 @@ export default function Home() {
           </div>
         </section>
         <section id="projects" className="projects d-flex justify-content-center w-75 mx-auto mb-5">
-          <div className="container">
+          <div className="container w-100">
             <div className="header wow fadeInUp">Projects</div>
             <div className="projects-container d-flex flex-wrap justify-content-between h-100 wow fadeInUp">
               {project}
