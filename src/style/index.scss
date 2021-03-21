@@ -93,9 +93,8 @@ button {
     .projects-container {
       .project-container {
         background-color: #F5BA4F;
-        height: 30vh;
-        width: 20vw;
-        min-width: 225px;
+        height: 200px;
+        width: 300px;
         border-radius: 5px;
         text-align: center;
         .project-img {
@@ -174,6 +173,23 @@ button {
         margin-bottom: 10px;
       }
     }
+  }
+}
+
+.end {
+  height: 100vh;
+  width: 100vh;
+  text-align: center;
+  color: white;
+  .container {
+    width: 225px
+  }
+  p {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 16px;
+  }
+  .social-links {
   }
 }
 
