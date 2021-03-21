@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Shape19() {
   return (
-    <svg className="layer shape19" datda-depth="0.3" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg className="layer shape19" data-depth="0.3" width="9" height="9" viewBox="0 0 9 9" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path d="M7.34662 4.8324H0.783657C0.359186 4.8324 0 4.47324 0 4.04877C0 3.6243 0.359186 3.26514 0.783657 3.26514H7.34662C7.77109 3.26514 8.13028 3.6243 8.13028 4.04877C8.13028 4.47324 7.77109 4.8324 7.34662 4.8324Z" fill="white" />
       <path d="M4.04879 8.13025C3.62432 8.13025 3.26514 7.77109 3.26514 7.34662V0.783633C3.26514 0.359161 3.62432 0 4.04879 0C4.47327 0 4.83243 0.359161 4.83243 0.783633V7.34662C4.83243 7.77109 4.50592 8.13025 4.04879 8.13025Z" fill="white" />
     </svg>

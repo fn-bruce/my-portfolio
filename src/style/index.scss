@@ -11,8 +11,10 @@ body {
 }
 
 .intro {
-  background-color: #3B3E4E;
+  background: transparent;
   height: 100vh;
+  position: relative;
+  z-index: 2;
   div {
     text-align: center;
     h1 {
@@ -40,6 +42,7 @@ button {
 }
 
 .parallax {
+  background-color: #3B3E4E;
   position: absolute;
   top: 0;
   left: 0;
@@ -47,6 +50,7 @@ button {
   height: 100%;
   .layer {
     position: absolute;
+    z-index: 1;
   }
   .shape1 {
     left: 15% !important;
