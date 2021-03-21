@@ -10,6 +10,20 @@ body {
   font-family: Noto Sans;
 }
 
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: #2B2C3A;
+  border-bottom: 1px solid #393752;
+  .active {
+    color: #F5BA4F !important;
+  }
+  a {
+    color: white !important;
+  }
+}
+
 .intro {
   background: transparent;
   height: 100vh;
