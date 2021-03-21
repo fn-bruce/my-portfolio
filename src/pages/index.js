@@ -126,7 +126,7 @@ export default function Home() {
           />
           <div className="description ml-auto">
             <h1 className="wow fadeInUp">My Story</h1>
-            <p className="wow fadeInUp">I am Bruce Nguyen, software developer from Utah, United States. I have professional experience in data engineering using Python, Redis, Docker, AWS to ingest data and transform into readable format. On the side, I like to create web applications using React and Django. I'm also self motivated to learn about new technologies to help create efficient solutions that could be applied programmatically.</p>
+            <p className="wow fadeInUp">I am Bruce Nguyen, software developer from Utah, United States. I have professional experience in data engineering using <b>Python</b>, <b>Redis</b>, <b>Docker</b>, <b>AWS</b> to ingest data and transform into readable format. On the side, I like to create web applications using <b>React</b> and <b>Django</b>. I'm also self motivated to learn about new technologies to help create efficient solutions that could be applied programmatically.</p>
           </div>
         </section>
         <section id="technologies" className="technologies d-flex justify-content-center w-75 mx-auto my-4">
