@@ -3,6 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import IntroParallax from "../components/IntroParallax";
 import Popup from 'reactjs-popup';
 import { ScrollTo } from "react-scroll-to";
+import { Helmet } from "react-helmet";
 
 export default function Home() {
   const iconHeight = 60;
@@ -46,6 +47,10 @@ export default function Home() {
 
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Bruce Nguyen</title>
+      </Helmet>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#intro">BRUCE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
