@@ -8,7 +8,7 @@ import { Helmet } from "react-helmet";
 export default function Home() {
   const iconHeight = 60;
 
-  const project = (
+  const project1 = (
     <Popup
       trigger={
         <div className="project-container card img-fluid">
@@ -19,8 +19,6 @@ export default function Home() {
             layout="fixed"
             style={{ width: "100%" }}
           />
-
-          {/* <div className="title">hansoloyang.com</div> */}
         </div>
       }
       modal
@@ -43,6 +41,40 @@ export default function Home() {
       </div>
     </Popup>
 
+  )
+
+  const project2 = (
+    <Popup
+      trigger={
+        <div className="project-container card img-fluid">
+          <StaticImage
+            className="project-img"
+            src="../images/bboyaid-website.png"
+            alt="bboyaid-website"
+            layout="fixed"
+            style={{ width: "100%" }}
+          />
+        </div>
+      }
+      modal
+      nested
+    >
+      <div className="project-modal">
+        <div className="header">BboyAid</div>
+        <div className="content">
+          <StaticImage
+            className="project-img"
+            src="../images/bboyaid-website.png"
+            alt="html-css-js"
+            style={{ borderRadius: "5px" }}
+          />
+          <p className="description">This website was built to help new Bboy's (breakdancers) become exposed to the wide variety of dance moves created.</p>
+          <a href="https://bboyaid.com" target="_blank">
+            <button>Visit Website</button>
+          </a>
+        </div>
+      </div>
+    </Popup>
   )
 
   return (
@@ -204,8 +236,9 @@ export default function Home() {
         <section id="projects" className="projects d-flex justify-content-center w-75 mx-auto my-5">
           <div className="container w-100">
             <div className="header">Projects</div>
-            <div className="projects-container d-flex flex-wrap justify-content-between h-100">
-              {project}
+            <div className="projects-container d-flex flex-wrap h-100">
+              {project1}
+              {project2}
             </div>
           </div>
         </section>
