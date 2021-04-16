@@ -68,7 +68,7 @@ export default function Home() {
             alt="html-css-js"
             style={{ borderRadius: "5px" }}
           />
-          <p className="description">This website was built to help new Bboy's (breakdancers) become exposed to a wide variety of dance moves.</p>
+            <p className="description">This website was built to help new Bboy's (breakdancers) become exposed to a wide variety of dance moves. I used <b>React</b> as my frontend and <b>Firebase Realtime Database</b> cloud service. This application follows the <b>CRUD</b> achitectural style. Includes an <b>authentication system</b> using the <b>Firebase API</b></p>
           <a href="https://bboyaid.com" target="_blank">
             <button>Visit Website</button>
           </a>
