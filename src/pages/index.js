@@ -68,7 +68,7 @@ export default function Home() {
             alt="html-css-js"
             style={{ borderRadius: "5px" }}
           />
-          <p className="description">This website was built to help new Bboy's (breakdancers) become exposed to the wide variety of dance moves created.</p>
+          <p className="description">This website was built to help new Bboy's (breakdancers) become exposed to a wide variety of dance moves.</p>
           <a href="https://bboyaid.com" target="_blank">
             <button>Visit Website</button>
           </a>
