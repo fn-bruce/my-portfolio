@@ -1,6 +1,7 @@
 import React from "react"
 import { StaticImage } from "gatsby-plugin-image";
 import Popup from 'reactjs-popup';
+import "./style.scss";
 
 
 export default function Projects() {

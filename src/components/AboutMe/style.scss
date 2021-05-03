@@ -1,0 +1,30 @@
+.about-me {
+    max-width: 900px;;
+    div {
+      width: 75%;
+      color: white;
+      h1 {
+        margin-bottom: 10px;
+      }
+    }
+    .description {
+      b {
+        color: #F5C95E !important;
+      }
+    }
+  }
+
+@media(max-width: 700px) {
+  .about-me {
+    padding-top: 25px;
+    .description {
+      margin-left: auto !important;
+      margin-right: auto !important;
+      margin-top: 25px !important;
+      width: 400px;
+      h1 {
+        text-align: center;
+      }
+    }
+  }
+}

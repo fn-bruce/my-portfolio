@@ -1,0 +1,63 @@
+.contact-me {
+  color: white;
+  height: 50vh;
+  max-width: 900px;;
+  div {
+    h1 {
+      width: 250px;
+    }
+    a {
+      text-decoration: none;
+      color: #F5BA4F;
+      border-bottom: solid 1px #F5BA4F;
+    }
+  }
+  .container {
+    form {
+      width: 25vw;
+      label {
+        color: #C8C8D6;
+      }
+      input[type=text], input[type=email] {
+        width: 25vw;
+        background: transparent;
+        border: 0px;
+        border-bottom: 1px solid #626677;
+        color: white;
+        outline: none;
+        margin-bottom: 20px;
+        &::placeholder {
+          color: white;
+        }
+      }
+      input[type=submit] {
+        display: none;
+      }
+      svg {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+@media(max-width: 700px) {
+  .contact-me {
+    height: 60vh;
+    .container {
+      div {
+        width: 100%;
+        margin-left: 0 !important;
+      }
+      form {
+        margin-top: 30px !important;
+        width: 100vh !important;
+        input {
+          width: 100% !important;
+        }
+      }
+
+    }
+  }
+}

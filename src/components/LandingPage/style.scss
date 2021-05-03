@@ -1,0 +1,120 @@
+.intro {
+  background: transparent;
+  height: 100vh;
+  position: relative;
+  z-index: 2;
+  div {
+    text-align: center;
+    h1 {
+      color: white;
+      font-size: 72px;
+    }
+    p {
+      color: white;
+      font-size: 16px;
+    }
+  }
+}
+
+.parallax {
+  background-color: #3B3E4E;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  .layer {
+    position: absolute;
+    z-index: 1;
+  }
+  .shape1 {
+    left: 15% !important;
+    top: 10% !important;
+  }
+  .shape2 {
+    left: 35% !important;
+    top: 10% !important;
+  }
+  .shape3 {
+    left: 15% !important;
+    top: 35% !important;
+  }
+  .shape4 {
+    left: 10% !important;
+    top: 55% !important;
+  }
+  .shape5 {
+    left: 30% !important;
+    top: 35% !important;
+  }
+  .shape6 {
+    left: 20% !important;
+    top: 60% !important;
+  }
+  .shape7 {
+    left: 25% !important;
+    top: 85% !important;
+  }
+  .shape8 {
+    left: 35% !important;
+    top: 65% !important;
+  }
+  .shape9 {
+    left: 45% !important;
+    top: 90% !important;
+  }
+  .shape10 {
+    left: 65% !important;
+    top: 10% !important;
+  }
+  .shape11 {
+    left: 70% !important;
+    top: 70% !important;
+  }
+  .shape12 {
+    left: 70% !important;
+    top: 90% !important;
+  }
+  .shape13 {
+    left: 75% !important;
+    top: 50% !important;
+  }
+  .shape14 {
+    left: 80% !important;
+    top: 15% !important;
+  }
+  .shape15 {
+    left: 90% !important;
+    top: 10% !important;
+  }
+  .shape16 {
+    left: 85% !important;
+    top: 40% !important;
+  }
+  .shape17 {
+    left: 85% !important;
+    top: 65% !important;
+  }
+  .shape18 {
+    left: 85% !important;
+    top: 85% !important;
+  }
+  .shape19 {
+    left: 80% !important;
+    top: 75% !important;
+  }
+}
+
+@media(max-width: 700px) {
+  .intro {
+    background-color: #3B3E4E;
+    div {
+      h1 {
+        font-size: 64px;
+      }
+    }
+  }
+  .parallax {
+    display: none;
+  }
+}

@@ -1,0 +1,26 @@
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+  background-color: #2B2C3A !important;
+  border-bottom: 1px solid #393752;
+  .navbar-toggler {
+    padding: 0;
+  }
+  .active {
+    color: #F5BA4F !important;
+  }
+  a {
+    color: white !important;
+    &:hover {
+      color: #F5BA4F !important;
+    }
+  }
+}
+
+@media(max-width: 700px) {
+  .navbar-toggler {
+    width: 50px;
+  }
+}
